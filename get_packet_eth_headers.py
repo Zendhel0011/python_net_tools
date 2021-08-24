@@ -77,7 +77,6 @@ def report(eth, arp):
 
 while True:
     packet, addr = raw_socket.recvfrom(2048)
-    print(addr)
     ethernet_header, arp_header = get_packets_headers(packet)
     ethernet_header = parse_binary_to_hex(ethernet_header)
     arp_header = parse_binary_to_hex(arp_header)
