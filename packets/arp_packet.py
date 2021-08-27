@@ -94,7 +94,7 @@ class Arp_packet():
 
 class Ethernet_frame(): 
     global hexa
-    def __init__(self, target_mac,source_mac, ether_type, arp):
+    def __init__(self, target_mac, source_mac, ether_type, arp):
         if type(arp) is bytes:
             hexa = "0x"
             # Aqui debo implementar un filtro para que pongan bien las mac como parametro
